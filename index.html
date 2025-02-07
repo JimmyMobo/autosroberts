@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escáner de Códigos QR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escáner de Códigos QR</h1>
+        <div class="scanner-container">
+            <div class="scanner">
+                <div id="qr-reader1" class="qr-reader"></div>
+                <button id="scan-btn1" onclick="startScan(1)">Escanear Primer QR</button>
+            </div>
+            <div class="scanner">
+                <div id="qr-reader2" class="qr-reader"></div>
+                <button id="scan-btn2" onclick="startScan(2)">Escanear Segundo QR</button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="reset-btn" onclick="resetScan()">Reiniciar</button>
+    </div>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="script.js"></script>
+</body>
+</html>
